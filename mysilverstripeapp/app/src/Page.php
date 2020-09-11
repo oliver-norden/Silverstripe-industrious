@@ -9,5 +9,10 @@ namespace {
         private static $db = [];
 
         private static $has_one = [];
+
+        // Return all testimonials
+        public function getTestimonials() {
+            return Testimonial::get();
+        }
     }
 }
