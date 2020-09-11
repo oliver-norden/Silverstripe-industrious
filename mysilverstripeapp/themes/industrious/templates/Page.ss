@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="/_resources/themes/industrious/css/main.css" />
 	</head>
 	<body class="is-preload">
 
@@ -201,11 +201,11 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="/_resources/themes/industrious/js/jquery.min.js"></script>
+			<script src="/_resources/themes/industrious/js/browser.min.js"></script>
+			<script src="/_resources/themes/industrious/js/breakpoints.min.js"></script>
+			<script src="/_resources/themes/industrious/js/util.js"></script>
+			<script src="/_resources/themes/industrious/js/main.js"></script>
 
 	</body>
 </html>
