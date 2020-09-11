@@ -16,12 +16,20 @@
         </ul>
       </section>
       <section>
-        <h4>Magna sed ipsum</h4>
+        <h4>Connect with us!</h4>
         <ul class="plain">
-          <li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
-          <li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
-          <li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
-          <li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+          <% if $SiteConfig.TwitterLink %>
+            <li><a href="$SiteConfig.TwitterLink"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>            
+          <% end_if %>
+          <% if $SiteConfig.FacebookLink %>
+            <li><a href="$SiteConfig.FacebookLink"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+          <% end_if %>  
+          <% if $SiteConfig.InstagramLink %>
+            <li><a href="$SiteConfig.InstagramLink"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+          <% end_if %>  
+          <% if $SiteConfig.GithubLink %>
+            <li><a href="$SiteConfig.GithubLink"><i class="icon fa-github">&nbsp;</i>Github</a></li>          
+          <% end_if %>  
         </ul>
       </section>
     </div>
