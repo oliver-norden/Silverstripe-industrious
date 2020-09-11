@@ -36,7 +36,7 @@
       </section>
     </div>
     <div class="copyright">
-      &copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>.
+      &copy; {$SiteConfig.Title}. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>.
     </div>
   </div>
 </footer>
