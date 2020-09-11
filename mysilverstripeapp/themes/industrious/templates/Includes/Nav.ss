@@ -1,8 +1,8 @@
 <!-- Nav -->
 <nav id="menu">
   <ul class="links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="elements.html">Elements</a></li>
-    <li><a href="generic.html">Generic</a></li>
+    <% loop Menu(1) %>
+      <li><a href="$Link">$MenuTitle</a></li>
+    <% end_loop %>
   </ul>
 </nav>
