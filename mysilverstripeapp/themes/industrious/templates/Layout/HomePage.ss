@@ -1,1 +1,3 @@
 <% include Banner %>
+
+<% include Highlights %>
