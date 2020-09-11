@@ -4,20 +4,27 @@ use SilverStripe\Assets\File;
 use SilverStripe\Assets\Image;
 use SilverStripe\Forms\TextareaField;
 use SilverStripe\AssetAdmin\Forms\UploadField;
+use SilverStripe\Forms\CompositeField;
 use SilverStripe\Forms\GridField\GridField;
 use SilverStripe\Forms\GridField\GridFieldConfig_RelationEditor;
+use SilverStripe\Forms\HeaderField;
+use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
+use SilverStripe\Forms\TextField;
 
 class HomePage extends Page {
 
   // Define database fields
   private static $db = [
     'Lead' => 'Text',
+    'CTAHeading' => 'Varchar',
+    'CTAContent' => 'HTMLText',
   ];
 
   // Define realtions to other objects
   private static $has_one = [
     'Video' => File::class,
     'Image' => Image::class,
+    'CTAImage' => Image::class,
   ];
 
   private static $has_many = [
@@ -28,6 +35,7 @@ class HomePage extends Page {
   private static $owns = [
     'Video',
     'Image',
+    'CTAImage',
   ];
 
   public function getCMSFields() {
@@ -41,6 +49,16 @@ class HomePage extends Page {
     $gridFieldConfig = GridFieldConfig_RelationEditor::create();
     $highligthsField = GridField::create('Highlights', 'Highlights', $this->Highlights(), $gridFieldConfig);
     $fields->addFieldToTab('Root.Highlights', $highligthsField);
+
+    // Add field for CTA section
+    $ctaCompositeField = CompositeField::create([
+      HeaderField::create('CTA'),
+      TextField::create('CTAHeading'),
+      HTMLEditorField::create('CTAContent'),
+      UploadField::create('CTAImage', 'CTA background image'),
+    ]);
+
+    $fields->addFieldToTab('Root.Main', $ctaCompositeField, 'Metadata');
 
     // Add fields to main tab above content field
     $fields->addFieldsToTab('Root.Main', [
