@@ -19,6 +19,8 @@
 
     <% include Nav %>
 
+    $Layout
+
     <% include Footer %>
 
 		<!-- Scripts -->
