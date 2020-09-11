@@ -27,6 +27,11 @@
             ".htaccess",
             "index.php",
             "web.config"
+        ],
+        "expose": [
+            "themes/industrious/js",
+            "themes/industrious/fonts",
+            "themes/industrious/css"
         ]
     },
     "config": {
