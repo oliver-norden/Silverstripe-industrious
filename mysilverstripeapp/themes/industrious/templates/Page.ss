@@ -13,7 +13,13 @@
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="/_resources/themes/industrious/css/main.css" />
 	</head>
-	<body class="is-preload">
+  <body class="is-preload">
+    
+    <% include Header %>
+
+    <% include Nav %>
+
+    <% include Footer %>
 
 		<!-- Scripts -->
 			<script src="/_resources/themes/industrious/js/jquery.min.js"></script>
