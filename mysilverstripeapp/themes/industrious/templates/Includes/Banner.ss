@@ -1,9 +1,11 @@
 <!-- Banner -->
-<section id="banner">
+<section
+  id="banner"
+  <% if $Image %>style="background-image: url($Image.URL)"<% end_if %>
+>
   <div class="inner">
-    <h1>Industrious</h1>
-    <p>A responsive business oriented template with a video background<br />
-    designed by <a href="https://templated.co/">TEMPLATED</a> and released under the Creative Commons License.</p>
+    <h1>$Title</h1>
+    <p>$Lead</p>
   </div>
-  <video autoplay loop muted playsinline src="images/banner.mp4"></video>
+  <video autoplay loop muted playsinline src="$Video.URL"></video>
 </section>
