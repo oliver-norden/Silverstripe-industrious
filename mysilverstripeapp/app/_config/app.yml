@@ -1,0 +1,2 @@
+SilverStripe\View\SSViewer:
+  rewrite_hash_links: false
