@@ -7,13 +7,16 @@
           $SiteConfig.FooterContent
         </section>
       <% end_if %>
-        <ul class="alt">
-          <li><a href="#">Dolor pulvinar sed etiam.</a></li>
-          <li><a href="#">Etiam vel lorem sed amet.</a></li>
-          <li><a href="#">Felis enim feugiat viverra.</a></li>
-          <li><a href="#">Dolor pulvinar magna etiam.</a></li>
-        </ul>
-      </section>
+      <% if getFooterPages %>
+        <section>
+          <h4>Featured pages</h4>
+          <ul class="alt">
+            <% loop getFooterPages %>
+              <li><a href="$Link">$MenuTitle</a></li>
+            <% end_loop %>
+          </ul>
+        </section>    
+      <% end_if %>
       <section>
         <h4>Connect with us!</h4>
         <ul class="plain">

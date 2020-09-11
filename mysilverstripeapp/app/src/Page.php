@@ -25,5 +25,10 @@ class Page extends SiteTree
         public function getTestimonials() {
             return Testimonial::get();
         }
+
+        // Return all pages where ShowInFooter is set to true
+        public function getFooterPages() {
+            return Page::get()->filter(['ShowInFooter' => true]);
+        }
     }
 }
