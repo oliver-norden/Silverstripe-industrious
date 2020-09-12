@@ -3,6 +3,7 @@ A static site from [Templated](https://templated.co/) converted to a Silverstrip
 <br>
 Template used [Industrious](https://templated.co/industrious).
 <br>
+<br>
 Tutorial: [First Silverstripe Project](https://olivernorden.se/blog/silverstripe-pdfs)
 
 ## Set up project locally
